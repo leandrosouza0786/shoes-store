@@ -1,0 +1,9 @@
+@import '~src/assets/styles/mixins';
+
+.header {
+  background: #fff;
+  height: rem(86);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
