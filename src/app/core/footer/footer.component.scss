@@ -1,0 +1,99 @@
+@import '~src/assets/styles/mixins';
+
+$background-color: #de8f75;
+$color-grey: #aeb6c1;
+$color-link: #202020;
+
+.footer {
+  position: relative;
+
+  &-newletter {
+    width: rem(293);
+    height: rem(293);
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #aeb6c1;
+    position: absolute;
+    right: rem(30);
+    bottom: rem(100);
+    overflow: hidden;
+
+    &__title {
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: rem(40);
+      color: #202020;
+      font-size: rem(16);
+    }
+  }
+
+  &-top {
+    margin-top: rem(110);
+    border-top: 2px solid #aeb6c1;
+
+    &__container {
+      width: 90%;
+      margin: rem(16) auto rem(55);
+    }
+
+    &__social {
+      padding-top: rem(10);
+
+      &__link {
+        margin-right: rem(30);
+      }
+    }
+
+    &__nav {
+      margin: rem(16) 0;
+      display: flex;
+      align-items: center;
+    }
+
+    &__list {
+      margin-right: rem(62);
+    }
+
+    &__item {
+      margin: rem(10) 0;
+    }
+
+    &__title {
+      color: $color-grey;
+      font-weight: bold;
+      font-size: rem(12);
+      text-transform: uppercase;
+    }
+
+    &__link {
+      color: $color-link;
+      font-weight: normal;
+      text-decoration: none;
+      transition: opacity 0.2s;
+      font-size: rem(14);
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &-bottom {
+    background: $background-color;
+    color: #fff;
+    font-size: rem(12);
+
+    &__container {
+      width: 90%;
+      margin: 0 auto;
+      min-height: rem(60);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__text {
+      width: 60%;
+    }
+  }
+}
