@@ -1,0 +1,43 @@
+@import '~src/assets/styles/mixins';
+
+$color-link: #686868;
+
+.navbar {
+  border: 1px solid #cccccc;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: rem(50);
+    font-size: rem(14);
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__list {
+    .navbar__item:not(:last-child) {
+      margin-right: rem(10);
+    }
+  }
+
+  &__list--center {
+    .navbar__item:not(:last-child) {
+      margin-right: rem(50);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-link;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

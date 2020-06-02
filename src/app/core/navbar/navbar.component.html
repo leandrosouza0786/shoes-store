@@ -1,0 +1,37 @@
+<nav class="navbar">
+  <div class="navbar__container">
+    <ul class="navbar__list navbar__list--left">
+      <li class="navbar__item">
+        <a routerLink="/" class="navbar__link">BUSCA</a>
+      </li>
+      <li class="navbar__item">
+        <a routerLink="/" class="navbar__link">carrinho</a>
+      </li>
+    </ul>
+    <ul class="navbar__list navbar__list--center">
+      <li class="navbar__item">
+        <a routerLink="/" class="navbar__link">SAPATOS</a>
+      </li>
+      <li class="navbar__item">
+        <a routerLink="/" class="navbar__link">BOLSAS</a>
+      </li>
+      <li class="navbar__item">
+        <a routerLink="/" class="navbar__link">ACESSÓRIOS</a>
+      </li>
+      <li class="navbar__item">
+        <a routerLink="/" class="navbar__link">OFF</a>
+      </li>
+    </ul>
+    <ul class="navbar__list navbar__list--right">
+      <li class="navbar__item">
+        <a (click)="showLoginToggle()" class="navbar__link">Entrar</a>
+      </li>
+      <li class="navbar__item">|</li>
+      <li class="navbar__item">
+        <a routerLink="/" class="navbar__link">Cadastrar-se</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<app-login *ngIf="stateLogin"></app-login>

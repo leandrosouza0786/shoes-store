@@ -3,8 +3,10 @@
   width: fit-content;
   padding: 20px;
   border-radius: 6px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: 0;
+  margin-right: 30px;
   form {
     display: flex;
     flex-direction: column;
@@ -40,5 +42,12 @@
     width: 90px;
     height: 30px;
     cursor: pointer;
+    outline: none;
   }
+}
+
+
+.has-error{
+  border-bottom: 5px solid red;
+
 }
