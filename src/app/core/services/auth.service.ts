@@ -1,4 +1,4 @@
-import { User } from './../models/user';
+import { User } from './../../shared/models/user';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, of } from 'rxjs';
 import { HttpClient, HttpParams, HttpHeaders } from "@angular/common/http";
