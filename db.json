@@ -4,25 +4,31 @@
           "id":1,
           "name":"teste sapato",
           "value":100.00,
-          "categorie":"sapatos"
+          "category":"sapatos"
        },
        {
           "id":2,
           "name":"teste bolsas",
           "value":130.00,
-          "categorie":"bolsas"
+          "category":"bolsas"
        },
        {
          "id":3,
          "name":"teste acessorios",
          "value":150.00,
-         "categorie":"acessorios"
+         "category":"acessorios"
       },
       {
          "id":4,
          "name":"teste sapato 2",
          "value":900.00,
-         "categorie":"sapatos"
+         "category":"sapatos"
+      },
+      {
+         "id":5,
+         "name":"teste off",
+         "value":1200.00,
+         "category":"off"
       }
     ]
  }

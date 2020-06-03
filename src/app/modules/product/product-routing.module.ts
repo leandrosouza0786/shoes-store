@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ListarComponent } from './listar/listar.component';
 
 const routes: Routes = [
-  { path: 'list/:categorie', component: ListarComponent }
+  { path: 'list/:category', component: ListarComponent }
 ];
 
 @NgModule({

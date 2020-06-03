@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { Product } from '../product.model';
 import { ProductService } from '../product.service';
+import { Subject } from 'rxjs';
+import { takeUntil } from "rxjs/operators";
 
 @Component({
   selector: 'app-listar',
@@ -10,16 +12,33 @@ import { ProductService } from '../product.service';
 })
 export class ListarComponent implements OnInit {
 
+  private unsubscribe$ = new Subject();
+
   products: Product[];
 
   constructor(
     private productService: ProductService, 
-    private activatedRoute: ActivatedRoute) { }
+    private activatedRoute: ActivatedRoute,
+    private router: Router) { }
 
-  ngOnInit(): void {
+  changeCategory() {
     this.productService
-      .list(this.activatedRoute.snapshot.params['categorie'])
+      .list(this.activatedRoute.snapshot.params['category'])
       .subscribe(products => this.products = products);
+  }
+  
+  ngOnInit(): void {
+    this.changeCategory();
+    this.router.events
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe((event) => {
+        if(event instanceof NavigationEnd) this.changeCategory();
+      });
+  }
+
+  ngOnDestroy(): void {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
   }
 
 }
