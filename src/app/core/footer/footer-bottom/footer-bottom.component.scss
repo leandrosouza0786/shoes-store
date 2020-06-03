@@ -1,0 +1,39 @@
+@import '~src/assets/styles/mixins';
+
+$background-color: #de8f75;
+$color-grey: #aeb6c1;
+$color-link: #202020;
+
+$screen-desktop: rem(768);
+$screen-desktop-xl: rem(1200);
+
+// * footer bottom
+
+.footer-bottom {
+  background: $background-color;
+  color: #fff;
+  font-size: rem(12);
+
+  &__container {
+    width: 90%;
+    margin: 0 auto;
+    min-height: rem(60);
+    padding: rem(10) 0;
+    text-align: center;
+
+    @media (min-width: $screen-desktop) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__text {
+    text-align: start;
+    margin-bottom: rem(10);
+
+    @media (min-width: $screen-desktop) {
+      width: 60%;
+    }
+  }
+}

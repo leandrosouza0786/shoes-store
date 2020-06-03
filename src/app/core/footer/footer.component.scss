@@ -35,7 +35,6 @@ $screen-desktop-xl: rem(1200);
   }
 
   // * footer top
-
   &-top {
     margin-top: rem(110);
     border-top: 2px solid #aeb6c1;
@@ -106,37 +105,6 @@ $screen-desktop-xl: rem(1200);
 
       &:hover {
         opacity: 0.8;
-      }
-    }
-  }
-
-  // * footer bottom
-
-  &-bottom {
-    background: $background-color;
-    color: #fff;
-    font-size: rem(12);
-
-    &__container {
-      width: 90%;
-      margin: 0 auto;
-      min-height: rem(60);
-      padding: rem(10) 0;
-      text-align: center;
-
-      @media (min-width: $screen-desktop) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-    }
-
-    &__text {
-      text-align: start;
-      margin-bottom: rem(10);
-
-      @media (min-width: $screen-desktop) {
-        width: 60%;
       }
     }
   }
