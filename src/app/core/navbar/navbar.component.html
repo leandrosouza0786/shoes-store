@@ -22,7 +22,7 @@
         <a routerLink="/" class="navbar__link">OFF</a>
       </li>
     </ul>
-    <ul class="navbar__list navbar__list--right">
+    <ul class="navbar__list navbar__list--right" *ngIf="!alreadyLogin">
       <li class="navbar__item">
         <a (click)="showLoginToggle()" class="navbar__link">Entrar</a>
       </li>
@@ -31,7 +31,13 @@
         <a routerLink="/" class="navbar__link">Cadastrar-se</a>
       </li>
     </ul>
+    <ul class="navbar__list navbar__list--right" *ngIf="alreadyLogin">
+      <li class="navbar__item">
+        <!-- sem api ainda pra pegar o name do user lgoado-->
+        <!-- <a (click)="showLoginToggle()" class="navbar__link">bem vindo, {{userInfo}}</a> -->
+        <a (click)="deslogar()" class="navbar__link">bem vindo, Leandro</a>
+      </li>
+    </ul>
   </div>
 </nav>
-
-<app-login *ngIf="stateLogin"></app-login>
+<app-login *ngIf="stateLogin" (stateLogin)="stateUser($event)"></app-login>

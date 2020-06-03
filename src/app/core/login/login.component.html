@@ -1,17 +1,17 @@
 <div class="container-login">
-  <form [formGroup]="loginForm">
-    <span>
+  <form class="form-login" [formGroup]="loginForm">
+    <span class="form-title">
       Logue para acesso
     </span>
 
-    <input [ngClass]="{ 'has-error': loginForm.controls.username.invalid }" 
+    <input class="form-input" [ngClass]="{ 'has-error': loginForm.controls.username.invalid }" 
     type="text" name="username" placeholder="Email ou CPF" formControlName="username" autocomplete="on">
 
-    <input type="password" name="pass" placeholder="Senha" formControlName="password" autocomplete="off">
+    <input class="form-input"  type="password" name="pass" placeholder="Senha" formControlName="password" autocomplete="off">
 
-    <button type="button" class="login100-form-btn" (click)="onSubmit()">
+    <button class="form-btn" type="button" (click)="onSubmit()">
       Login
     </button>
-
+      
   </form>
 </div>
