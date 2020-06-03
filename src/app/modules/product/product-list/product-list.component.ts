@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
-import { Product } from '../product.model';
+import { Product } from '../../../shared/models/product.model';
 import { ProductService } from '../product.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from "rxjs/operators";
 
 @Component({
-  selector: 'app-listar',
-  templateUrl: './listar.component.html',
-  styleUrls: ['./listar.component.scss']
+  selector: 'app-product-list',
+  templateUrl: './product-list.component.html',
+  styleUrls: ['./product-list.component.scss']
 })
-export class ListarComponent implements OnInit {
+export class ProductListComponent implements OnInit {
 
   private unsubscribe$ = new Subject();
 

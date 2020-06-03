@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ProductRoutingModule } from './product-routing.module';
-import { ListarComponent } from './listar/listar.component';
+import { ProductListComponent } from './product-list/product-list.component';
 import { ProductService } from './product.service';
 
 
 @NgModule({
-  declarations: [ListarComponent],
+  declarations: [ProductListComponent],
   imports: [
     CommonModule,
     ProductRoutingModule,
