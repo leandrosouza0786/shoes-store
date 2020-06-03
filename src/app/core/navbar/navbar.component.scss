@@ -35,7 +35,7 @@ $color-link: #686868;
     text-decoration: none;
     color: $color-link;
     transition: opacity 0.2s;
-
+    cursor: pointer;
     &:hover {
       opacity: 0.8;
     }
