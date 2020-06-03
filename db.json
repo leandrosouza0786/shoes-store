@@ -1,0 +1,28 @@
+{
+    "products":[
+       {
+          "id":1,
+          "name":"teste sapato",
+          "value":100.00,
+          "categorie":"sapatos"
+       },
+       {
+          "id":2,
+          "name":"teste bolsas",
+          "value":130.00,
+          "categorie":"bolsas"
+       },
+       {
+         "id":3,
+         "name":"teste acessorios",
+         "value":150.00,
+         "categorie":"acessorios"
+      },
+      {
+         "id":4,
+         "name":"teste sapato 2",
+         "value":900.00,
+         "categorie":"sapatos"
+      }
+    ]
+ }
