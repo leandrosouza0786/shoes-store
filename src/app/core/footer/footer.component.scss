@@ -4,19 +4,26 @@ $background-color: #de8f75;
 $color-grey: #aeb6c1;
 $color-link: #202020;
 
+$screen-desktop: rem(768);
+$screen-desktop-xl: rem(1200);
+
 .footer {
   position: relative;
 
-  &-newletter {
-    width: rem(293);
-    height: rem(293);
-    border-radius: 50%;
-    background: #fff;
-    border: 2px solid #aeb6c1;
-    position: absolute;
-    right: rem(30);
-    bottom: rem(100);
-    overflow: hidden;
+  // * footer newsletter
+
+  &-newsletter {
+    @media (min-width: $screen-desktop) {
+      width: rem(293);
+      height: rem(293);
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid #aeb6c1;
+      position: absolute;
+      right: rem(30);
+      top: rem(-100);
+      overflow: hidden;
+    }
 
     &__title {
       text-align: center;
@@ -27,9 +34,12 @@ $color-link: #202020;
     }
   }
 
+  // * footer top
+
   &-top {
     margin-top: rem(110);
     border-top: 2px solid #aeb6c1;
+    padding-bottom: rem(16);
 
     &__container {
       width: 90%;
@@ -39,19 +49,41 @@ $color-link: #202020;
     &__social {
       padding-top: rem(10);
 
-      &__link {
+      @media (max-width: $screen-desktop) {
+        text-align: center;
+      }
+
+      &__link:not(:last-child) {
         margin-right: rem(30);
       }
     }
 
     &__nav {
       margin: rem(16) 0;
-      display: flex;
-      align-items: center;
+      text-align: center;
+
+      @media (min-width: $screen-desktop) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: start;
+        width: 80%;
+      }
+
+      @media (min-width: $screen-desktop-xl) {
+        display: flex;
+        width: 100%;
+      }
     }
 
     &__list {
-      margin-right: rem(62);
+      @media (min-width: $screen-desktop) {
+        margin-right: rem(62);
+      }
+
+      img:not(:last-child) {
+        margin-right: rem(30);
+      }
     }
 
     &__item {
@@ -78,6 +110,8 @@ $color-link: #202020;
     }
   }
 
+  // * footer bottom
+
   &-bottom {
     background: $background-color;
     color: #fff;
@@ -87,13 +121,23 @@ $color-link: #202020;
       width: 90%;
       margin: 0 auto;
       min-height: rem(60);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      padding: rem(10) 0;
+      text-align: center;
+
+      @media (min-width: $screen-desktop) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
     }
 
     &__text {
-      width: 60%;
+      text-align: start;
+      margin-bottom: rem(10);
+
+      @media (min-width: $screen-desktop) {
+        width: 60%;
+      }
     }
   }
 }
