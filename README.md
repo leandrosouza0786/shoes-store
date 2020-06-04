@@ -17,7 +17,7 @@
   <br>
   <br>
   <a href="#technologies">Technologies</a> |
-  <a href="#how_to_use"> How to Use </a> |
+  <a href="#how-to-use"> How to Use </a> |
   <a href="#contributors"> Contributors </a>
   <br>
   <br>
