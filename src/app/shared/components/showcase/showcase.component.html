@@ -1,6 +1,8 @@
 <div class="showcase">
     <div class="showcase__container">
-        <img class="showcase__img" [title]="product.name" [src]="product.imageUrl" [alt]="product.name">
+        <a [routerLink]="['/product/detail', product.id]" class="showcase__url">
+            <img class="showcase__img" [title]="product.name" [src]="product.imageUrl" [alt]="product.name">
+        </a>
     </div>
     <div class="showcase__container">
         <p class="showcase__value">{{product.value | currency : 'R$'}}</p>

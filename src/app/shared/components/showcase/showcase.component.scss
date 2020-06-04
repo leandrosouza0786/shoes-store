@@ -1,7 +1,7 @@
 @import '~src/assets/styles/mixins';
 
 .showcase {
-    margin: rem(14);
+    margin: rem(14) rem(7);
 
     &__value {
         font-size: rem(16);
