@@ -1,31 +1,53 @@
-# Frontend
+<h1 align="center">
+  <img src="./src/assets/img/logo.svg">
+  <br>
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
+<h3 align="center">
+<strong>Shoes Store</strong>
+</h3>
 
-## Development server
+<p align="center">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  <img alt="top language" src="https://img.shields.io/github/languages/top/leandrosouza0786/shoes-store?style=flat-square">
+  <img alt="language count" src="https://img.shields.io/github/languages/count/leandrosouza0786/shoes-store?style=flat-square">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/leandrosouza0786/shoes-store?style=flat-square">
+  <img alt="Last commit" src="https://img.shields.io/github/last-commit/leandrosouza0786/shoes-store?style=flat-square">
+  <img alt="Pull request" src="https://img.shields.io/github/issues-pr/leandrosouza0786/shoes-store?style=flat-square">
+  <br>
+  <br>
+  <a href="#technologies">Technologies</a> | 
+  <a href="#contributors"> Contributors </a>
+  <br>
+  <br>
+</p>
 
-## Starting the JSON server
+## Technologies
 
-Run `npm run api` for a fake REST API. Navigate to `http://localhost:3000/`.
+- Angular 9+
+- SASS
 
-## Code scaffolding
+## How to Use
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To run this project you'll need GIT, NodeJS and Angular installed on your computer.
 
-## Build
+```bash
+# clone project
+$ git clone https://github.com/leandrosouza0786/shoes-store
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Go into the repository
+$ cd shoes-store
 
-## Running unit tests
+# Install dependencies
+$ npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Run the project
+$ ng serve
 
-## Running end-to-end tests
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Contributors
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+<a href="https://github.com/leandrosouza0786/shoes-store/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=leandrosouza0786/shoes-store" />
+</a>
