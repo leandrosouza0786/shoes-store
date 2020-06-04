@@ -45,6 +45,9 @@ $ npm install
 # Run the project
 $ ng serve
 
+# Run JSON server
+$ npm run api
+
 ```
 
 ## Contributors
