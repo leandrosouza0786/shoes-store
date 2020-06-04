@@ -16,9 +16,9 @@
   <img alt="Pull request" src="https://img.shields.io/github/issues-pr/leandrosouza0786/shoes-store?style=flat-square">
   <br>
   <br>
-  <a href="#technologies">Technologies</a> | 
+  <a href="#technologies">Technologies</a> |
   <a href="#how_to_use"> How to Use </a> |
-  <a href="#contributors"> Contributors </a> 
+  <a href="#contributors"> Contributors </a>
   <br>
   <br>
 </p>
