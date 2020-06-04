@@ -2,7 +2,7 @@
     "products":[
        {
           "id":1,
-          "name":"teste sapato",
+          "name":"sapatos",
           "imageUrl":"https://via.placeholder.com/290x375",
           "value":100.00,
           "category":"sapatos",
@@ -10,7 +10,7 @@
        },
        {
           "id":2,
-          "name":"teste bolsas",
+          "name":"bolsas",
           "imageUrl":"https://via.placeholder.com/290x375",
           "value":130.00,
           "category":"bolsas",
@@ -18,7 +18,7 @@
        },
        {
          "id":3,
-         "name":"teste acessorios",
+         "name":"acessorios",
          "imageUrl":"https://via.placeholder.com/290x375",
          "value":150.00,
          "category":"acessorios",
@@ -26,11 +26,59 @@
       },
       {
          "id":4,
-         "name":"teste sapato 2",
+         "name":"sapatos",
          "imageUrl":"https://via.placeholder.com/290x375",
          "value":900.00,
          "category":"sapatos",
          "discount": 50
+      },
+      {
+         "id":5,
+         "name":"sapatos",
+         "imageUrl":"https://via.placeholder.com/290x375",
+         "value":230.00,
+         "category":"sapatos",
+         "discount": 0
+      },
+      {
+         "id":6,
+         "name":"sapatos",
+         "imageUrl":"https://via.placeholder.com/290x375",
+         "value":120.00,
+         "category":"sapatos",
+         "discount": 20
+      },
+      {
+         "id":7,
+         "name":"acessorios",
+         "imageUrl":"https://via.placeholder.com/290x375",
+         "value":190.00,
+         "category":"acessorios",
+         "discount": 80
+      },
+      {
+         "id":8,
+         "name":"acessorios",
+         "imageUrl":"https://via.placeholder.com/290x375",
+         "value":450.00,
+         "category":"acessorios",
+         "discount": 40
+      },
+      {
+         "id":9,
+         "name":"bolsas",
+         "imageUrl":"https://via.placeholder.com/290x375",
+         "value":320.00,
+         "category":"bolsas",
+         "discount": 0
+      },
+      {
+         "id":10,
+         "name":"sapato",
+         "imageUrl":"https://via.placeholder.com/290x375",
+         "value":1000.00,
+         "category":"sapatos",
+         "discount": 0
       }
     ]
  }
