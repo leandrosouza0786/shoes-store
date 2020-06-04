@@ -70,6 +70,15 @@
 
     <div class="footer-newsletter">
       <h3 class="footer-newsletter__title">Asssine nosso news</h3>
+      <form class="form" [formGroup]="newsletterForm">
+        <app-input id="name" label="Nome" message="Campo obrigatório">
+          <input type="text" placeholder="Nome" formControlName="name" class="form__input" />
+        </app-input>
+        <app-input id="email" label="E-mail" message="Campo obrigatório">
+          <input type="email" placeholder="E-mail" formControlName="email" class="form__input" />
+        </app-input>
+        <button type="submit" class="button button--primary button--center">ENVIAR</button>
+      </form>
     </div>
   </div>
 

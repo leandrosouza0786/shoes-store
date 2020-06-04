@@ -1,0 +1,5 @@
+<div class="form-group" [class.has-success]="hasSucess()" [class.has-error]="hasError()">
+  <ng-content></ng-content>
+  <label class="form__label" [for]="id">{{label}}</label>
+  <span class="form__message" *ngIf="hasError()">{{message}}</span>
+</div>
