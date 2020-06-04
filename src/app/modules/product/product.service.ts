@@ -14,5 +14,6 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
   list = (category: string): Observable<Product[]> => this.http.get<Product[]>(`${this.apiUrl}?category=${category}`)
+  off = (): Observable<Product[]> => this.http.get<Product[]>(`${this.apiUrl}?discount_gte=1&discount_lte=100`)
   detail = (id: string): Observable<Product> => this.http.get<Product>(`${this.apiUrl}/${id}`)
 }

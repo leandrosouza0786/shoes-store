@@ -6,11 +6,11 @@ import { Subject } from 'rxjs';
 import { takeUntil } from "rxjs/operators";
 
 @Component({
-  selector: 'app-product-list',
-  templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.scss']
+  selector: 'app-product-category',
+  templateUrl: './product-category.component.html',
+  styleUrls: ['./product-category.component.scss']
 })
-export class ProductListComponent implements OnInit {
+export class ProductCategoryComponent implements OnInit {
 
   private unsubscribe$ = new Subject();
 

@@ -5,35 +5,32 @@
           "name":"teste sapato",
           "imageUrl":"https://via.placeholder.com/290x375",
           "value":100.00,
-          "category":"sapatos"
+          "category":"sapatos",
+          "discount": 0
        },
        {
           "id":2,
           "name":"teste bolsas",
           "imageUrl":"https://via.placeholder.com/290x375",
           "value":130.00,
-          "category":"bolsas"
+          "category":"bolsas",
+          "discount": 10
        },
        {
          "id":3,
          "name":"teste acessorios",
          "imageUrl":"https://via.placeholder.com/290x375",
          "value":150.00,
-         "category":"acessorios"
+         "category":"acessorios",
+         "discount": 0
       },
       {
          "id":4,
          "name":"teste sapato 2",
          "imageUrl":"https://via.placeholder.com/290x375",
          "value":900.00,
-         "category":"sapatos"
-      },
-      {
-         "id":5,
-         "name":"teste off",
-         "imageUrl":"https://via.placeholder.com/290x375",
-         "value":1200.00,
-         "category":"off"
+         "category":"sapatos",
+         "discount": 50
       }
     ]
  }
