@@ -25,6 +25,11 @@ $screen-desktop-xl: rem(1200);
       overflow: hidden;
     }
 
+    &__form {
+      margin: rem(20) auto;
+      width: 70%;
+    }
+
     &__title {
       text-align: center;
       text-transform: uppercase;
