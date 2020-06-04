@@ -10,16 +10,16 @@
     </ul>
     <ul class="navbar__list navbar__list--center">
       <li class="navbar__item">
-        <a routerLink="/" class="navbar__link">SAPATOS</a>
+        <a [routerLink]="['/product/list', 'sapatos']" class="navbar__link">SAPATOS</a>
       </li>
       <li class="navbar__item">
-        <a routerLink="/" class="navbar__link">BOLSAS</a>
+        <a [routerLink]="['/product/list', 'bolsas']" class="navbar__link">BOLSAS</a>
       </li>
       <li class="navbar__item">
-        <a routerLink="/" class="navbar__link">ACESSÓRIOS</a>
+        <a [routerLink]="['/product/list', 'acessorios']" class="navbar__link">ACESSÓRIOS</a>
       </li>
       <li class="navbar__item">
-        <a routerLink="/" class="navbar__link">OFF</a>
+        <a [routerLink]="['/product/list', 'off']" class="navbar__link">OFF</a>
       </li>
     </ul>
     <ul class="navbar__list navbar__list--right" *ngIf="!alreadyLogin">
