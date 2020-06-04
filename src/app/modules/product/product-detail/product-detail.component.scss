@@ -1,0 +1,11 @@
+@import '~src/assets/styles/mixins';
+
+.detail {
+
+    &__container {
+        width: 90%;
+        margin: rem(12) auto;
+        text-align: center;
+    }
+
+}

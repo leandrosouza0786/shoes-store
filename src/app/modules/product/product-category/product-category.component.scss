@@ -1,0 +1,15 @@
+@import '~src/assets/styles/mixins';
+
+.product {
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 90%;
+        min-height: rem(430);
+        margin: rem(12) auto;
+    }
+
+}

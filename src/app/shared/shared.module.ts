@@ -3,13 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { SharedRoutingModule } from './shared-routing.module';
 
-import { InputComponent } from './input/input.component';
+import { InputComponent } from './components/input/input.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { ShowcaseComponent } from './components/showcase/showcase.component';
+import { OffPipe } from './pipes/off.pipe';
 
 
 @NgModule({
-  declarations: [ShowcaseComponent, InputComponent],
+  declarations: [ShowcaseComponent, InputComponent, OffPipe],
   imports: [
     CommonModule,
     SharedRoutingModule,

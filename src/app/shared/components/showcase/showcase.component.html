@@ -1,8 +1,16 @@
 <div class="showcase">
-    <div class="showcase__container">
-        <img class="showcase__img" [title]="product.name" [src]="product.imageUrl" [alt]="product.name">
+    <div class="stripe" *ngIf="product.discount">
+        <span class="stripe__off">{{product.discount}}% OFF</span>
     </div>
     <div class="showcase__container">
-        <p class="showcase__value">{{product.value | currency : 'R$'}}</p>
+        <a [routerLink]="['/product/detail', product.id]" class="showcase__url">
+            <img class="showcase__img" [title]="product.name" [src]="product.imageUrl" [alt]="product.name">
+        </a>
+    </div>
+    <div class="showcase__container">
+        <p class="showcase__value">
+            <span [class.has__discount]="product.discount">{{product.value | currency : 'R$'}}</span>
+            <span *ngIf="product.discount">{{product.value | off : product.discount | currency : 'R$'}}</span>
+        </p>
     </div>
 </div>
