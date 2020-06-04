@@ -1,0 +1,12 @@
+@import '~src/assets/styles/mixins';
+
+.product {
+
+    &__container {
+        display: flex;
+        justify-content: left;
+        width: 90%;
+        margin: rem(12) auto;
+    }
+
+}

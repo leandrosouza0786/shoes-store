@@ -1,5 +1,8 @@
-<ul *ngFor="let product of products">
-    <li>Produto: {{product.name}}</li>
-    <li>Valor: {{product.value}}</li>
-</ul>
-
+<section class="product">
+    <div class="product__container">
+        <app-showcase 
+            [product]="product" 
+            *ngFor="let product of products">
+        </app-showcase>
+    </div>
+</section>

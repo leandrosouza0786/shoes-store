@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { HttpClientModule } from '@angular/common/http';
+
 import { ProductRoutingModule } from './product-routing.module';
-import { ProductListComponent } from './product-list/product-list.component';
+import { SharedModule } from '../../shared/shared.module';
 import { ProductService } from './product.service';
+import { ProductListComponent } from './product-list/product-list.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { ProductService } from './product.service';
   imports: [
     CommonModule,
     ProductRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [ProductService]
 })

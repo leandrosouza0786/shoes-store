@@ -1,0 +1,8 @@
+<div class="showcase">
+    <div class="showcase__container">
+        <img class="showcase__img" [title]="product.name" [src]="product.imageUrl" [alt]="product.name">
+    </div>
+    <div class="showcase__container">
+        <p class="showcase__value">{{product.value | currency : 'R$'}}</p>
+    </div>
+</div>
