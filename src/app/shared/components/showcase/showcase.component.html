@@ -8,6 +8,7 @@
         </a>
     </div>
     <div class="showcase__container">
+        <button (click)="cartAdd(product)">Add</button>
         <p class="showcase__value">
             <span [class.has__discount]="product.discount">{{product.value | currency : 'R$'}}</span>
             <span *ngIf="product.discount">{{product.value | off : product.discount | currency : 'R$'}}</span>
