@@ -5,7 +5,11 @@
         <a routerLink="/" class="navbar__link">BUSCA</a>
       </li>
       <li class="navbar__item">
-        <a routerLink="/" class="navbar__link">carrinho</a>
+        <a [routerLink]="['checkout']" class="navbar__link">
+          <img class="navbar__cart" src="./assets/img/supermarket.svg" alt="">
+        </a>
+        <span> {{maxCartState}}
+        </span>
       </li>
     </ul>
     <ul class="navbar__list navbar__list--center">

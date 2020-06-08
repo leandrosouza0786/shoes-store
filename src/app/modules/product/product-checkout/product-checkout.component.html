@@ -1,0 +1,24 @@
+<section class="checkout">
+    <div class="checkout__header">
+        <h3>Checkout de Produtos</h3>
+    </div>
+    <div class="checkout__content">
+        <ng-container  *ngIf="products?.length>0; else empty">
+
+        <div class="checkout__item" *ngFor="let prod of products ">
+            <img src="" alt="">
+            <h2>{{prod.name}}</h2>
+            <span>{{prod.value}}</span>
+            <span>{{prod.discount}}</span>
+           <button (click)="removeItem(prod.id)">remover</button>
+        </div>
+        <p *ngFor="let item of products">
+            {{item.teste}}
+        </p>
+    </ng-container>
+    <ng-template #empty>
+        <div><em>Sem produtos adicionados</em></div>
+      </ng-template>
+    </div>   
+    <button>Pagamento</button>
+</section>
