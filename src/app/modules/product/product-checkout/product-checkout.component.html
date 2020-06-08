@@ -10,7 +10,7 @@
             <h2>{{prod.name}}</h2>
             <span>{{prod.value}}</span>
             <span>{{prod.discount}}</span>
-           <button>remover</button>
+           <button (click)="removeItem(prod.id)">remover</button>
         </div>
         <p *ngFor="let item of products">
             {{item.teste}}

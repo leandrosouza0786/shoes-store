@@ -10,7 +10,6 @@ import { Observable, Subscription } from 'rxjs';
 export class ProductCheckoutComponent implements OnInit {
 
   products: any[];
-  teste: boolean = false
   private subscription: Subscription;
 
   constructor(private cartShop: CartShopService) { }
@@ -20,6 +19,10 @@ export class ProductCheckoutComponent implements OnInit {
        .subscribe((state: any) =>
        {this.products = state.products},
       (err) => console.log("err", err));
+  }
+
+  removeItem(item){
+    this.cartShop.removeProduct(item)
   }
 
   ngOnDestroy() {

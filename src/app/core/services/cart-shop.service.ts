@@ -15,11 +15,16 @@ export class CartShopService {
 
   constructor(private httpclient : HttpClient) {}
 
-  addProduct(_product:any) {
-    console.log('in service', _product);
-    this.Products.push(_product)
+  addProduct(product:any) {
+    this.Products.push(product)
     this.cartSubject.next({products:  this.Products});
     this.itemBS.next({products:  this.Products})
+  }
+
+  removeProduct(id:number) {
+    this.Products = this.Products.filter((item) =>  item.id !== id )
+    this.cartSubject.next(<any>{products:  this.Products});
+    this.itemBS.next(<any>{products:  this.Products})
   }
   
 }
